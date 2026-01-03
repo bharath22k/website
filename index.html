@@ -79,6 +79,18 @@
         .logo-text span {
             color: var(--primary);
         }
+        /* Add this to your CSS */
+        .logo-link {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: inherit; /* Keeps text color same */
+        }
+
+        .logo-link:hover {
+             opacity: 0.9; /* Slight hover effect */
+        }
 
         .nav-links {
             display: flex;
@@ -502,12 +514,13 @@
 <body>
     <!-- Header & Navigation -->
     <header>
-        <div class="container header-container">
-            <div class="logo">
-    <img src="https://raw.githubusercontent.com/bharath22k/website/main/assets/PREMS%20NEW%20LOGO.jpg" 
-        alt="PREMS NEW LOGO" 
-        class="logo-image">
-    <div class="logo-text">Prems<span>Foundation</span></div>
+        <div class="logo">
+    <a href="#home" class="logo-link">
+        <img src="https://raw.githubusercontent.com/bharath22k/website/main/assets/PREMS%20NEW%20LOGO.jpg" 
+             alt="PREMS NEW LOGO" 
+             class="logo-image">
+        <div class="logo-text">Prems<span>Foundation</span></div>
+    </a>
 </div>
             
             <div class="mobile-menu">
